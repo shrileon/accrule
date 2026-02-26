@@ -1,0 +1,23 @@
+[project]
+name = "app"
+version = "0.0.1"
+description = ""
+authors = [
+    {name = "Ioann Prokurat",email = "ioann0602@gmail.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.133.1,<0.134.0)",
+    "bcrypt (>=5.0.0,<6.0.0)",
+    "uvicorn[standard] (>=0.41.0,<0.42.0)"
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
